@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&family=VT323&display=swap');
+/* 
+font-family: 'Sono', sans-serif;
+font-family: 'VT323', monospace; 
+*/
+body{
+    font-family: 'Sono', sans-serif;
+}
+/* hero code start  */
+.hero-sec{
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(../img/hero.jpg) center no-repeat;
+    height: calc(100vh - 0px);
+}
+.hero-sec .hero-inner{
+    height: 100%;
+}
+.hero-sec .hero-job{
+    font-family: 'VT323', monospace !important; 
+    font-size: 3rem;
+}
+@media (min-width: 0px) and (max-width: 435px){
+    .hero-sec .hero-job{ 
+        font-size: 2.5rem;
+    }
+}
+@media (min-width: 992px){
+    .hero-sec .hero-inner p.intro{ 
+        width: 60%;
+    }
+}
+/* hero code end  */
+/* nav code start  */
+.nav-sec{
+    background: linear-gradient(to right, rgb(0,0,0),rgb(25,25,25), rgb(0,0,0));
+}
+.nav-sec .navbar .navbar-brand,
+.nav-sec .navbar-nav .nav-link{
+    color: #fff;
+}
+/* nav code end  */
+/* about code start */
+.about-inner h2{
+    font-family: 'VT323', monospace;
+    position: relative;
+}
+@media (min-width: 0px) and (max-width: 576px){
+    .about-inner h2{
+        font-size: 3rem;
+    }
+}
+.about-inner h2::before{
+    position: absolute;
+    content: "";
+    background-color: #000;
+    height: 0.3rem;
+    width: 3rem;
+    top: 1.2rem;
+    left: -3.5rem;
+    transform: skew(50deg, 0deg);
+}
+@media (min-width: 0px) and (max-width: 576px){
+    .about-inner h2::before{
+        height: 0.3rem;
+        top: 1rem;
+    }
+}
+.about-inner h2::after{
+    position: absolute;
+    content: "";
+    background-color: #000;
+    height: 0.3rem;
+    width: 3rem;
+    bottom: 1rem;
+    right: -3.5rem;
+    transform: skew(-50deg, 0deg);
+}
+
+
+/* about code end */
