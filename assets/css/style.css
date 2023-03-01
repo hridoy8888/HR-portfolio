@@ -37,6 +37,22 @@ body{
 .nav-sec .navbar-nav .nav-link{
     color: #fff;
 }
+.navbar button.navbar-toggler{
+    color: #fff;
+    border: 2px solid #fff;
+    outline: 1px;
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+  }
+  @media (min-width: 0px) and (max-width: 991px){
+    ul li.nav-item{
+        margin-right: 1rem;
+      }
+}
+  
 /* nav code end  */
 /* about code start */
 .about-inner h2{
